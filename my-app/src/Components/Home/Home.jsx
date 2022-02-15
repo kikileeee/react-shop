@@ -1,9 +1,13 @@
 import React from 'react'
-import './home.css'
+import './home.scss'
+import Navbar from '../Navbar/Navbar'
 
 const Home = () => {
   return (
+    <>
+    <Navbar></Navbar>
     <div className='home'></div>
+    </>
   )
 }
 

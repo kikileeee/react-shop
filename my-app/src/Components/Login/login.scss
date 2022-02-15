@@ -1,0 +1,52 @@
+$primaryClr : rgb(92, 97, 248);
+
+
+.login{
+    
+display: flex;
+width: 60%;
+flex-direction: column;
+margin: auto;
+margin-top: 10%;
+background-color: $primaryClr;
+border-radius: 5px;
+color: white;
+gap: 20px;
+font-size: x-large;
+font-weight: 500;
+padding: 10px;
+    
+
+    input{
+        margin: auto;
+        min-width: 300px;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: x-large;
+    }
+    label{
+        margin: auto;
+    }
+    button{
+        margin: auto;
+        width: 150px;
+        background-color: white;
+        border: none;
+        color: $primaryClr;
+        cursor: pointer;
+        padding: 10px;
+        font-size: x-large;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+    button:hover{
+        background-color: $primaryClr;
+        transition: ease-in-out 150ms;
+    }
+    p{
+        margin: auto;
+        cursor: pointer;
+    }
+
+}

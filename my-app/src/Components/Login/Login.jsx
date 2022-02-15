@@ -1,9 +1,9 @@
 import React from 'react'
-import './login.css'
+import './login.scss'
 
 const Login = () => {
   return (
-    <form className='loginForm' >
+    <form className='login' >
         <label htmlFor="name">Username</label>
         <input name='name' type="text" />
         <label name='password'>Password</label>
