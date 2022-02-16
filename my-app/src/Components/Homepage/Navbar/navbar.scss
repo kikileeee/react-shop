@@ -1,0 +1,35 @@
+.navBar{
+    background-color: rgb(92, 97, 248);
+    margin: 0;
+    padding: 1px;
+    color: white;
+    padding-right: 10px;
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    li{
+        font-size: x-large;
+        font-weight: 500;
+        list-style-type: none;
+        width: auto;
+        cursor: pointer;
+        padding: 20px;
+    }
+    li:hover{
+        color: rgb(201, 201, 201);
+        transition: ease-in-out 200ms;
+    }
+    .firstNav{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .secondNav{
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}

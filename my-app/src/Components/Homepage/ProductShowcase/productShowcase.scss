@@ -1,0 +1,36 @@
+.productShowcase{
+    .slides{
+        margin: 20px;
+        width: auto;
+        min-height: 25vh;
+        display: flex;
+    }
+    .productCard {
+        display: flex;
+        div:nth-child(3) {
+            width: 80%;
+          }
+        div{
+            background-color: white;
+            width: auto;
+            height: 100%;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+    
+            img{
+                width: 100%;
+            }
+            h1{
+                height: 100px;
+            }
+            h2{
+                color: rgb(6, 85, 6);
+            }
+            p{
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}
