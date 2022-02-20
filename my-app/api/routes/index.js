@@ -1,6 +1,7 @@
-var express = require('express');
-var app = express.Router();
+const express = require('express');
+const app = express.Router();
 const { createPool } = require('mysql');
+
 
 const pool = createPool({
   host: "localhost",
@@ -10,10 +11,10 @@ const pool = createPool({
 });
 
 
-/* GET home page. */
 app.get('/', function (req, res, next) {
   pool.query(`SELECT * FROM products`, (error, data) => {
     res.send(data)
+    console.log(data)
   })
 });
 
