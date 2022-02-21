@@ -14,7 +14,16 @@ const pool = createPool({
 app.get('/', function (req, res, next) {
   pool.query(`SELECT * FROM products`, (error, data) => {
     res.send(data)
-    console.log(data)
+  })
+});
+app.get('/lowToHigh', function (req, res, next) {
+  pool.query(`SELECT * FROM products ORDER by productPrice ASC`, (error, data) => {
+    res.send(data)
+  })
+});
+app.get('/lucky', function (req, res, next) {
+  pool.query(`SELECT * FROM products ORDER BY RAND()`, (error, data) => {
+    res.send(data)
   })
 });
 
