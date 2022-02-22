@@ -4,6 +4,7 @@
     padding: 1px;
     color: white;
     padding-right: 10px;
+    padding-bottom: 0;
     ul{
         display: flex;
         justify-content: space-between;
@@ -15,6 +16,7 @@
         width: auto;
         cursor: pointer;
         padding: 20px;
+        position: relative;
     }
     li:hover{
         color: rgb(201, 201, 201);
@@ -32,4 +34,38 @@
         color: white;
         text-decoration: none;
     }
+    svg{
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .numberCart::after{
+        content: attr(data-after);
+        text-align: center;
+        display: block;
+        position: absolute;
+        background-color: orange;
+        width: 32px;
+        height: 32px;
+        z-index: 10;
+        border-radius: 5px;
+        top: 0;
+        right: 10px;
+    }
 }
+@media only screen and (max-width: 700px) {
+    .navBar{
+        ul{
+            padding: 0;
+            .secondNav{
+                padding-right: 10px;
+            }
+            div{
+                li{
+                    font-size: medium;
+                }
+            }
+        }
+        
+    }
+  }

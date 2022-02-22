@@ -7,9 +7,9 @@ display: flex;
 width: 60%;
 flex-direction: column;
 margin: auto;
-margin-top: 10%;
+margin-top: 5%;
 background-color: $primaryClr;
-border-radius: 5px;
+border-radius: 15px;
 color: white;
 gap: 20px;
 font-size: x-large;
@@ -19,17 +19,22 @@ padding: 10px;
 
     input{
         margin: auto;
-        min-width: 300px;
+        min-width: 250px;
+        width: 70%;
         padding: 8px;
         border-radius: 5px;
         border: none;
         font-size: x-large;
+        padding: 10px;
+        margin-top: 20px;
     }
     label{
         margin: auto;
     }
     button{
         margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         width: 150px;
         background-color: white;
         border: none;
@@ -41,17 +46,43 @@ padding: 10px;
         border-radius: 5px;
     }
     button:hover{
-        background-color: $primaryClr;
+        background-color: rgb(192, 192, 192);
         transition: ease-in-out 150ms;
     }
-    p{
+    a{
         margin: auto;
         cursor: pointer;
-    }
-    a{
         color: white;
         text-decoration: none;
         width: auto;
+        margin-bottom: 1rem;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        color: orange;
+        font-size: large;
+    }
+    .d-none{
+        display: none;
     }
 
 }
+@media only screen and (max-width: 700px) {
+    .login{
+        margin-top: 35%;
+        width: 100%;
+        padding: 0;
+        input{
+            width: 80%;
+            padding: auto;
+        }
+        p,a{
+            padding: 10px;
+        }
+    }
+  }

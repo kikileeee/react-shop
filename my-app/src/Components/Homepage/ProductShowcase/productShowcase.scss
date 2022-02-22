@@ -1,36 +1,168 @@
-.productShowcase{
-    .slides{
-        margin: 20px;
-        width: auto;
-        min-height: 25vh;
-        display: flex;
+$primaryClr : rgb(92, 97, 248);
+.productShowcaseWrapper{
+    position: relative;
+    h1{
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    .productShowcase{
+        padding-top: 20px;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        min-height: 600px;
+        
+        
+        .slides{
+            margin: 20px;
+            width: auto;
+            min-height: 25vh;
+            display: flex;
+            .back, .next{
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                border-radius: 5px;
+                svg{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .back:hover, .next:hover{
+                color: $primaryClr;
+            }
+            .divBack{
+                position: absolute;
+                left: 30px;
+                top: 280px;
+                z-index: 3;
+            }
+            .divNext{
+                position: absolute;
+                right: 30px;
+                top: 280px;
+                z-index: 3;
+            }
+            
+        }  
     }
     .productCard {
         display: flex;
-        div:nth-child(3) {
-            width: 80%;
-          }
+
+        .card{
+            -webkit-box-shadow: 0px 0px 36px -3px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 36px -3px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 36px -3px rgba(0,0,0,0.75);
+            margin-right: 20px;
+
+        }
         div{
             background-color: white;
-            width: auto;
+            width: 300px;
             height: 100%;
-            border: 2px solid black;
             padding: 10px;
             text-align: center;
+            position: relative;
     
             img{
                 width: 100%;
-            }
-            h1{
-                height: 100px;
+                height: 250px;
+                object-fit: cover;
             }
             h2{
-                color: rgb(6, 85, 6);
+                padding-top: 30px;
+                height: 60px;
+                margin: 0;
             }
-            p{
+            h3{
+                color: rgb(6, 85, 6);
+                min-height: 50px;
+            }
+            .blackOverlay{
                 width: 100%;
-                margin: auto;
+                border: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 50%;
+                z-index: 1;
+                background: rgba(0, 0, 0, 0);
+                p{
+                    padding-top: 20px;
+                    color: rgba(255, 255, 255, 0);
+                    font-size: larger;
+                    font-weight: 500;
+
+                }
+                button{
+                    cursor: pointer;
+                    opacity: 1;
+                    background-color: transparent;
+                    border: none;
+                }
+                svg{
+                    margin-top: 50px;
+                    width: 100px;
+                    height: 100px;
+                    color: rgba(255, 255, 255, 0);
+                }
+            }
+            
+           
+        }
+        
+    }
+    .productCard .card:hover{
+        .blackOverlay{
+            background: rgb(0, 0, 0, 0.6);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            p,svg{
+                color: rgba(255, 255, 255, 1);
+            }
+            svg:hover{
+                color: $primaryClr;
+                transform: scale(1.2);
+                transition: ease-in-out all 250ms;
             }
         }
+        transform: scale(1.1);
+        border-radius: 8px;
+        transition: ease-in-out all 200ms;
+        z-index: 1;
     }
+    
 }
+@media only screen and (max-width: 300px) {
+    .productShowcase{
+        .slides{
+            .productCard{
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 15px;
+                div{
+                    margin: auto;
+                    width: 30%;
+                    height: auto;
+                    div:hover{
+                        display: block;
+                    }
+                    .blackOverlay{
+                        margin: 0;
+                        width: 100%;
+                        height: 50%;
+                    }
+                }
+                
+        .card{
+            min-width: 200px;
+        }
+            }
+    }
+  }}
