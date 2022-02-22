@@ -11,7 +11,7 @@ const pool = createPool({
 });
 
 
-app.get('/', function (req, res, next) {
+app.get('/popular', function (req, res, next) {
   pool.query(`SELECT * FROM products`, (error, data) => {
     res.send(data)
   })
