@@ -17,7 +17,7 @@ const Login = () => {
     password: password
   }
   function getDataUsers() {
-    fetch('http://localhost:9000/users/login', {
+    fetch('http://192.168.1.113:9000/users/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body)

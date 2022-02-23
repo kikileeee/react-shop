@@ -4,12 +4,14 @@ import { v4 as uuidv4 } from 'uuid'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCartSharp';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import { useNavigate } from 'react-router-dom'
 
 const ProductShowcase = (props) => {
     const [Products, SetProducts] = useState([]);
     const inputBackNext = useRef()
+    const navigate = useNavigate()
     useEffect(() => {
-        fetch('http://localhost:9000/' + props.fetch, {
+        fetch('http://192.168.1.113:9000/' + props.fetch, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => response.json().then(data => {
@@ -66,6 +68,7 @@ const ProductShowcase = (props) => {
                             <div className='card' key={uuidv4()}>
                                 <h2>{product.productName}</h2>
                                 <h3>Current price: {product.productPrice}$</h3>
+                                <h4 onClick={() => {navigate(`/productInfo/`,{state:{product:product}})}}>Click for more info</h4>
                                 <img src={require(`../ProductShowcase/images/${product.productImage}`)} alt="" />
                                 <div className='blackOverlay'>
                                     <button onClick={() => { addItem(product) }}><AddShoppingCartIcon /></button>

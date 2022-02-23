@@ -20,7 +20,7 @@ const Navbar = (props) => {
       <ul>
         <div className='firstNav'>
           <li><a href="/">Home</a></li>
-          <li>Our products</li>
+          <li> <a href="/products">Our products</a></li>
         </div>
         <div className='secondNav'>
           <li><a className='numberCart' href="/cart"  data-after={props.cartNumber}><AddShoppingCartIcon/></a></li>
