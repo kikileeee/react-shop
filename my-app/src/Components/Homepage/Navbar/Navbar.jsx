@@ -8,9 +8,6 @@ const Navbar = (props) => {
     if (JSON.parse(localStorage.getItem('userInfo')) !== null){
       setUser(JSON.parse(localStorage.getItem('userInfo')).username )
     }
-    else{
-  
-    }
   }, [])
 
   
@@ -24,7 +21,7 @@ const Navbar = (props) => {
         </div>
         <div className='secondNav'>
           <li><a className='numberCart' href="/cart"  data-after={props.cartNumber}><AddShoppingCartIcon/></a></li>
-          <a href="login"><li>{user}</li></a>
+          <li><a href="login">{user}</a></li>
         </div>
       </ul>
     </nav>

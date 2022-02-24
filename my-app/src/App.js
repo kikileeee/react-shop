@@ -28,7 +28,7 @@ function App() {
         </Route>
         <Route path='/products' element={<Products cartNumber={cartNumber} setCartNumber={setCartNumber}/>}>
         </Route>
-        <Route path='/productInfo/' element={<ProductInfo cartNumber={cartNumber} setCartNumber={setCartNumber}/>}>
+        <Route path='/productInfo' element={<ProductInfo cartNumber={cartNumber} setCartNumber={setCartNumber}/>}>
         </Route>
       </Routes>
     </Router>

@@ -15,5 +15,14 @@ app.post('/', function (req, res, next) {
         res.send(data)
     })
 });
+app.put('/', function (req, res, next) {
+    console.log(req.body)
+    pool.query(`INSERT INTO comment ( comment, productid, user, date ) VALUES ('${req.body.comment}', '${req.body.productid}', '${req.body.user}', '${req.body.date}')`, (error, data) => {
+        pool.query(`SELECT * FROM comment where productid = ${req.body.productid}`, (error, dataSecond) => {
+            res.send(dataSecond)
+        })
+    })
+
+});
 
 module.exports = app;

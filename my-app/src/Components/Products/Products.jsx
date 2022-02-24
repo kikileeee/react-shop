@@ -68,7 +68,7 @@ const Products = (props) => {
                             return <div className='card' key={uuidv4()}>
                                 <h2>{product.productName}</h2>
                                 <h3>Current price: {product.productPrice}$</h3>
-                                <h4 onClick={() => {navigate(`/productInfo/`,{state:{product:product}})}}>Click for more info</h4>
+                                <h4 onClick={() => {navigate(`/productInfo`,{state:{product:product}})}}>Click for more info</h4>
                                 <img src={require(`../Homepage/ProductShowcase/images/${product.productImage}`)} alt="" />
                                 <div className='blackOverlay'>
                                     <button onClick={() => { addItem(product) }}><AddShoppingCartIcon /></button>
