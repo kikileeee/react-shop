@@ -18,7 +18,7 @@ const ProductInfo = (props) => {
     if (JSON.parse(localStorage.getItem('userInfo')) !== null) {
       setUser(JSON.parse(localStorage.getItem('userInfo')).username)
     }
-    fetch(`http://192.168.1.113:9000/comment`, {
+    fetch(`http://${process.env.REACT_APP_IP}/comment`, {
       method: 'POST',
       body: JSON.stringify(product),
       headers: { 'Content-Type': 'application/json' }

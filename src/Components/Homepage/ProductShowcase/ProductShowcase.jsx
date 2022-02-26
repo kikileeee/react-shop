@@ -11,7 +11,7 @@ const ProductShowcase = (props) => {
     const inputBackNext = useRef()
     const navigate = useNavigate()
     useEffect(() => {
-        fetch('http://192.168.1.113:9000/' + props.fetch, {
+        fetch(`http://${process.env.REACT_APP_IP}/` + props.fetch, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => response.json().then(data => {

@@ -25,7 +25,7 @@ const Login = () => {
   }
 
   function sendData() {
-    fetch('http://192.168.1.113:9000/users', {
+    fetch(`http://${process.env.REACT_APP_IP}/users`, {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json' }
