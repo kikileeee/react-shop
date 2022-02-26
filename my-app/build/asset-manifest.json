@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.000948fc.css",
+    "main.js": "/static/js/main.8d34372b.js",
+    "static/media/shoes.png": "/static/media/shoes.c0d13fe6503dce0bd7e3.png",
+    "static/media/air-max-plus-mens-shoes-x9G2xF.jfif": "/static/media/air-max-plus-mens-shoes-x9G2xF.59de4a7f26337459ee40.jfif",
+    "static/media/air-zoom-gt-jump-basketball-shoes-Mj4kHp.jfif": "/static/media/air-zoom-gt-jump-basketball-shoes-Mj4kHp.8c038e8426e63383f2e9.jfif",
+    "static/media/air-max-furyosa-womens-shoes-cB0194.jfif": "/static/media/air-max-furyosa-womens-shoes-cB0194.c37ea693f23a1d4b1e50.jfif",
+    "static/media/custom-nike-air-force-1-low-fm-joy-by-you.jfif": "/static/media/custom-nike-air-force-1-low-fm-joy-by-you.3b0cc6a28ccc04e374c1.jfif",
+    "static/media/lebron-19-big-kids-basketball-shoes-JDhwq2.jfif": "/static/media/lebron-19-big-kids-basketball-shoes-JDhwq2.cf80e177728298c896af.jfif",
+    "static/media/custom-nike-air-force-1-low-fm-change-by-you.jfif": "/static/media/custom-nike-air-force-1-low-fm-change-by-you.e4efd5a6ceb605c76a03.jfif",
+    "static/media/blazer-mid-77-mens-shoes-771m42.jfif": "/static/media/blazer-mid-77-mens-shoes-771m42.b211a02766e9bfa27d85.jfif",
+    "static/media/air-force-1-lv8-big-kids-shoes-zwgNJc.jfif": "/static/media/air-force-1-lv8-big-kids-shoes-zwgNJc.0e84f63d23c756dd0037.jfif",
+    "static/media/blazer-low-77-jumbo-shoes-RHTvLd.jfif": "/static/media/blazer-low-77-jumbo-shoes-RHTvLd.c55a83f41513ac6190b7.jfif",
+    "static/media/air-force-1-sculpt-womens-shoes-GKwftK.jfif": "/static/media/air-force-1-sculpt-womens-shoes-GKwftK.aa7b7f9fbf6794bf0e88.jfif",
+    "static/media/air-force-1-lv8-big-kids-shoes-zD4rLB.jfif": "/static/media/air-force-1-lv8-big-kids-shoes-zD4rLB.dd9794d69ce31c6f1dec.jfif",
+    "index.html": "/index.html",
+    "main.000948fc.css.map": "/static/css/main.000948fc.css.map",
+    "main.8d34372b.js.map": "/static/js/main.8d34372b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.000948fc.css",
+    "static/js/main.8d34372b.js"
+  ]
+}

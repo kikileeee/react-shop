@@ -7,10 +7,7 @@ const Login = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
-  
   const [refUsernamePasswordMatch, setrefUsernamePasswordMatch] = useState('d-none')
-
-
 
   let body = {
     username: username,
