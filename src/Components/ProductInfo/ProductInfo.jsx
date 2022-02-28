@@ -12,17 +12,14 @@ const ProductInfo = (props) => {
   const [user, setUser] = useState('Guest')
   const [inputComment, setInputComment] = useState('')
   const [updateCommentPanel, setUpdateCommentPanel] = useState('')
-  let url = `${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}`  || '192.168.1.113:9000'
-  if (url == ':'){
-    url = '192.168.1.113:9000'
-}
+  const port = `${process.env.PORT}` || '9000'
 
 
   useEffect(() => {
     if (JSON.parse(localStorage.getItem('userInfo')) !== null) {
       setUser(JSON.parse(localStorage.getItem('userInfo')).username)
     }
-    fetch(`http://${url}/comment`, {
+    fetch(`http://192.168.1.113:${port}/comment`, {
       method: 'POST',
       body: JSON.stringify(product),
       headers: { 'Content-Type': 'application/json' }
@@ -44,9 +41,8 @@ const ProductInfo = (props) => {
       comment: inputComment,
       date: date
     }
-    console.table(dataComment)
     if (inputComment != ''){
-    fetch(`http://192.168.1.113:9000/comment`, {
+    fetch(`http://192.168.1.113:${port}/comment`, {
       method: 'PUT',
       body: JSON.stringify(dataComment),
       headers: { 'Content-Type': 'application/json' }

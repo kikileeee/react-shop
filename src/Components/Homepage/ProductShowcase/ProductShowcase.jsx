@@ -10,13 +10,10 @@ const ProductShowcase = (props) => {
     const [Products, SetProducts] = useState([]);
     const inputBackNext = useRef()
     const navigate = useNavigate()
-    let url = `${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}`  || '192.168.1.113:9000'
-    console.log(url)
-    if (url == ':'){
-        url = '192.168.1.113:9000'
-    }
+    const port = `${process.env.PORT}` || '9000'
+
     useEffect(() => {
-        fetch(`http://${url}/` + props.fetch, {
+        fetch(`http://192.168.1.113:${port}/` + props.fetch, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => response.json().then(data => {

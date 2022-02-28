@@ -23,13 +23,10 @@ const Login = () => {
     password: password,
     confirmPassword: confirmPassword
   }
-  let url = `${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}`   || '192.168.1.113:9000'
-  if (url == ':'){
-    url = '192.168.1.113:9000'
-}
+  const port = `${process.env.PORT}` || '9000'
 
   function sendData() {
-    fetch(`http://${url}/users`, {
+    fetch(`http://192.168.1.113:${port}/users`, {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json' }
