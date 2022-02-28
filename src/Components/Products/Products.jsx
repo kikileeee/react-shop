@@ -10,8 +10,12 @@ const Products = (props) => {
     const [Products, SetProducts] = useState([]);
     const [Search, setSearch] = useState('')
     const navigate = useNavigate()
+    let url = `${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}`  || '192.168.1.113:9000'
+    if (url == ':'){
+        url = '192.168.1.113:9000'
+    }
     useEffect(() => {
-        fetch(`http://${process.env.REACT_APP_IP}/popular`, {
+        fetch(`http://${url}/popular`, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => response.json().then(data => {

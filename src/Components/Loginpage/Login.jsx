@@ -13,8 +13,12 @@ const Login = () => {
     username: username,
     password: password
   }
+  let url = `${process.env.REACT_APP_IP}:${process.env.REACT_APP_PORT}`   || '192.168.1.113:9000'
+  if (url == ':'){
+    url = '192.168.1.113:9000'
+}
   function getDataUsers() {
-    fetch(`http://${process.env.REACT_APP_IP}/users/login`, {
+    fetch(`http://${url}/users/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body)
