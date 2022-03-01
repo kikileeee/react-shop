@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/kikileeee/react-shop/static/css/main.000948fc.css",
-    "main.js": "/kikileeee/react-shop/static/js/main.391c776e.js",
-    "static/media/shoes.png": "/kikileeee/react-shop/static/media/shoes.c0d13fe6503dce0bd7e3.png",
-    "static/media/air-max-plus-mens-shoes-x9G2xF.jfif": "/kikileeee/react-shop/static/media/air-max-plus-mens-shoes-x9G2xF.59de4a7f26337459ee40.jfif",
-    "static/media/air-zoom-gt-jump-basketball-shoes-Mj4kHp.jfif": "/kikileeee/react-shop/static/media/air-zoom-gt-jump-basketball-shoes-Mj4kHp.8c038e8426e63383f2e9.jfif",
-    "static/media/air-max-furyosa-womens-shoes-cB0194.jfif": "/kikileeee/react-shop/static/media/air-max-furyosa-womens-shoes-cB0194.c37ea693f23a1d4b1e50.jfif",
-    "static/media/custom-nike-air-force-1-low-fm-joy-by-you.jfif": "/kikileeee/react-shop/static/media/custom-nike-air-force-1-low-fm-joy-by-you.3b0cc6a28ccc04e374c1.jfif",
-    "static/media/lebron-19-big-kids-basketball-shoes-JDhwq2.jfif": "/kikileeee/react-shop/static/media/lebron-19-big-kids-basketball-shoes-JDhwq2.cf80e177728298c896af.jfif",
-    "static/media/custom-nike-air-force-1-low-fm-change-by-you.jfif": "/kikileeee/react-shop/static/media/custom-nike-air-force-1-low-fm-change-by-you.e4efd5a6ceb605c76a03.jfif",
-    "static/media/blazer-mid-77-mens-shoes-771m42.jfif": "/kikileeee/react-shop/static/media/blazer-mid-77-mens-shoes-771m42.b211a02766e9bfa27d85.jfif",
-    "static/media/air-force-1-lv8-big-kids-shoes-zwgNJc.jfif": "/kikileeee/react-shop/static/media/air-force-1-lv8-big-kids-shoes-zwgNJc.0e84f63d23c756dd0037.jfif",
-    "static/media/blazer-low-77-jumbo-shoes-RHTvLd.jfif": "/kikileeee/react-shop/static/media/blazer-low-77-jumbo-shoes-RHTvLd.c55a83f41513ac6190b7.jfif",
-    "static/media/air-force-1-sculpt-womens-shoes-GKwftK.jfif": "/kikileeee/react-shop/static/media/air-force-1-sculpt-womens-shoes-GKwftK.aa7b7f9fbf6794bf0e88.jfif",
-    "static/media/air-force-1-lv8-big-kids-shoes-zD4rLB.jfif": "/kikileeee/react-shop/static/media/air-force-1-lv8-big-kids-shoes-zD4rLB.dd9794d69ce31c6f1dec.jfif",
-    "index.html": "/kikileeee/react-shop/index.html",
-    "main.000948fc.css.map": "/kikileeee/react-shop/static/css/main.000948fc.css.map",
-    "main.391c776e.js.map": "/kikileeee/react-shop/static/js/main.391c776e.js.map"
+    "main.css": "/react-shop/static/css/main.000948fc.css",
+    "main.js": "/react-shop/static/js/main.a01e804d.js",
+    "static/media/shoes.png": "/react-shop/static/media/shoes.c0d13fe6503dce0bd7e3.png",
+    "static/media/air-max-plus-mens-shoes-x9G2xF.jfif": "/react-shop/static/media/air-max-plus-mens-shoes-x9G2xF.59de4a7f26337459ee40.jfif",
+    "static/media/air-zoom-gt-jump-basketball-shoes-Mj4kHp.jfif": "/react-shop/static/media/air-zoom-gt-jump-basketball-shoes-Mj4kHp.8c038e8426e63383f2e9.jfif",
+    "static/media/air-max-furyosa-womens-shoes-cB0194.jfif": "/react-shop/static/media/air-max-furyosa-womens-shoes-cB0194.c37ea693f23a1d4b1e50.jfif",
+    "static/media/custom-nike-air-force-1-low-fm-joy-by-you.jfif": "/react-shop/static/media/custom-nike-air-force-1-low-fm-joy-by-you.3b0cc6a28ccc04e374c1.jfif",
+    "static/media/lebron-19-big-kids-basketball-shoes-JDhwq2.jfif": "/react-shop/static/media/lebron-19-big-kids-basketball-shoes-JDhwq2.cf80e177728298c896af.jfif",
+    "static/media/custom-nike-air-force-1-low-fm-change-by-you.jfif": "/react-shop/static/media/custom-nike-air-force-1-low-fm-change-by-you.e4efd5a6ceb605c76a03.jfif",
+    "static/media/blazer-mid-77-mens-shoes-771m42.jfif": "/react-shop/static/media/blazer-mid-77-mens-shoes-771m42.b211a02766e9bfa27d85.jfif",
+    "static/media/air-force-1-lv8-big-kids-shoes-zwgNJc.jfif": "/react-shop/static/media/air-force-1-lv8-big-kids-shoes-zwgNJc.0e84f63d23c756dd0037.jfif",
+    "static/media/blazer-low-77-jumbo-shoes-RHTvLd.jfif": "/react-shop/static/media/blazer-low-77-jumbo-shoes-RHTvLd.c55a83f41513ac6190b7.jfif",
+    "static/media/air-force-1-sculpt-womens-shoes-GKwftK.jfif": "/react-shop/static/media/air-force-1-sculpt-womens-shoes-GKwftK.aa7b7f9fbf6794bf0e88.jfif",
+    "static/media/air-force-1-lv8-big-kids-shoes-zD4rLB.jfif": "/react-shop/static/media/air-force-1-lv8-big-kids-shoes-zD4rLB.dd9794d69ce31c6f1dec.jfif",
+    "index.html": "/react-shop/index.html",
+    "main.000948fc.css.map": "/react-shop/static/css/main.000948fc.css.map",
+    "main.a01e804d.js.map": "/react-shop/static/js/main.a01e804d.js.map"
   },
   "entrypoints": [
     "static/css/main.000948fc.css",
-    "static/js/main.391c776e.js"
+    "static/js/main.a01e804d.js"
   ]
 }
