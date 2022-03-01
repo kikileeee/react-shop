@@ -13,8 +13,7 @@ const Login = () => {
     username: username,
     password: password
   }
-  const port = `${process.env.PORT}` || '9000'
-
+  const port = process.env.PORT || '9000'
   function getDataUsers() {
     fetch(`http://192.168.1.113:${port}/users/login`, {
       method: 'POST',

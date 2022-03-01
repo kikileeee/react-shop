@@ -12,8 +12,7 @@ const ProductInfo = (props) => {
   const [user, setUser] = useState('Guest')
   const [inputComment, setInputComment] = useState('')
   const [updateCommentPanel, setUpdateCommentPanel] = useState('')
-  const port = `${process.env.PORT}` || '9000'
-
+  const port = process.env.PORT || '9000'
 
   useEffect(() => {
     if (JSON.parse(localStorage.getItem('userInfo')) !== null) {

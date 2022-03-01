@@ -10,8 +10,7 @@ const Products = (props) => {
     const [Products, SetProducts] = useState([]);
     const [Search, setSearch] = useState('')
     const navigate = useNavigate()
-    const port = `${process.env.PORT}` || '9000'
-
+    const port = process.env.PORT || '9000'
     useEffect(() => {
         fetch(`http://192.168.1.113:${port}/popular`, {
             method: 'GET',
