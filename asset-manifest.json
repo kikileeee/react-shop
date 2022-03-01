@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-shop/static/css/main.000948fc.css",
-    "main.js": "/react-shop/static/js/main.a01e804d.js",
+    "main.js": "/react-shop/static/js/main.752791ae.js",
     "static/media/shoes.png": "/react-shop/static/media/shoes.c0d13fe6503dce0bd7e3.png",
     "static/media/air-max-plus-mens-shoes-x9G2xF.jfif": "/react-shop/static/media/air-max-plus-mens-shoes-x9G2xF.59de4a7f26337459ee40.jfif",
     "static/media/air-zoom-gt-jump-basketball-shoes-Mj4kHp.jfif": "/react-shop/static/media/air-zoom-gt-jump-basketball-shoes-Mj4kHp.8c038e8426e63383f2e9.jfif",
@@ -16,10 +16,10 @@
     "static/media/air-force-1-lv8-big-kids-shoes-zD4rLB.jfif": "/react-shop/static/media/air-force-1-lv8-big-kids-shoes-zD4rLB.dd9794d69ce31c6f1dec.jfif",
     "index.html": "/react-shop/index.html",
     "main.000948fc.css.map": "/react-shop/static/css/main.000948fc.css.map",
-    "main.a01e804d.js.map": "/react-shop/static/js/main.a01e804d.js.map"
+    "main.752791ae.js.map": "/react-shop/static/js/main.752791ae.js.map"
   },
   "entrypoints": [
     "static/css/main.000948fc.css",
-    "static/js/main.a01e804d.js"
+    "static/js/main.752791ae.js"
   ]
 }
