@@ -2,7 +2,7 @@
 
           /////     Im still working on this site    //////
 
-Page is currently active on this link : https://my-app-ap8sshldz-kikileeee.vercel.app/products
+Page is currently active on this link : https://my-app-ap8sshldz-kikileeee.vercel.app/
 (If database does not load products on the first time loading the site, wait a few second and then reload)
 
 Currently working on a React project.
